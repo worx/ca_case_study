@@ -1,0 +1,74 @@
+<?php
+/**
+ * @file
+ * Code for the CA Case Study feature.
+ */
+
+include_once 'ca_case_study.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function ca_case_study_menu() {
+  $items['admin/config/worx_features/case_study'] = array(
+    'title' => 'Case Study Configuration',
+    'description' => 'Override settings for ca_case_study',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_case_study_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_case_study.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_case_study'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/worx_features/case_study/general'] = array(
+    'title' => 'General Settings',
+    'description' => 'Override settings for ca_case_study',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_case_study_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_case_study.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_case_study'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function ca_case_study_menu_alter(&$items) {
+  $items['case_study']['title'] = variable_get('ca_case_study_menu_title', 'Case Study');
+}
+
+/**
+ * Implements hook_panels_pre_render().
+ */
+function ca_case_study_panels_pre_render($panel, $renderer) {
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_case_study-ca_case_study_list_1') {
+      $panel->title = variable_get('ca_case_study_panel_title', 'Case Study');
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ca_case_study_views_pre_view(&$view, &$display_id, &$args) {
+  if ($display_id == 'ca_case_study_list_1') {
+    $view->set_items_per_page(variable_get('ca_case_study_list_count', 5));
+  }
+  elseif ($display_id == 'ca_case_study_block_1') {
+    $view->set_items_per_page(variable_get('ca_case_study_block_count', 1));
+  }
+}
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function ca_case_study_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;
+  }
+}
