@@ -85,7 +85,7 @@ function ca_case_study_strongarm() {
   $strongarm->name = 'xmlsitemap_settings_node_case_study';
   $strongarm->value = array(
     'status' => '1',
-    'priority' => '0.6',
+    'priority' => '0.7',
   );
   $export['xmlsitemap_settings_node_case_study'] = $strongarm;
 

@@ -221,6 +221,7 @@ function ca_case_study_views_default_views() {
   $handler = $view->new_display('panel_pane', 'CA Case Study: Admin', 'ca_case_study_admin');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA Case Study: Admin';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_case_study_admin'] = $view;
 
   $view = new view();
