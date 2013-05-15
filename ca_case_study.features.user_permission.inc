@@ -14,9 +14,9 @@ function ca_case_study_user_default_permissions() {
   $permissions['create case_study content'] = array(
     'name' => 'create case_study content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'case study admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'case study admin' => 'case study admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_case_study_user_default_permissions() {
   $permissions['delete any case_study content'] = array(
     'name' => 'delete any case_study content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'case study admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'case study admin' => 'case study admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_case_study_user_default_permissions() {
   $permissions['delete own case_study content'] = array(
     'name' => 'delete own case_study content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'case study admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'case study admin' => 'case study admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_case_study_user_default_permissions() {
   $permissions['edit any case_study content'] = array(
     'name' => 'edit any case_study content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'case study admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'case study admin' => 'case study admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_case_study_user_default_permissions() {
   $permissions['edit own case_study content'] = array(
     'name' => 'edit own case_study content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'case study admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'case study admin' => 'case study admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
