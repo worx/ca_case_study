@@ -22,7 +22,7 @@ function ca_case_study_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function ca_case_study_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**
@@ -45,11 +45,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '200',
+          'width' => 200,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '-10',
+        'weight' => -10,
       ),
       9 => array(
         'label' => 'Crop',
@@ -61,11 +61,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '200',
-          'height' => '150',
+          'width' => 200,
+          'height' => 150,
           'anchor' => 'center-top',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
@@ -84,11 +84,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '45',
+          'width' => 45,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
       10 => array(
         'label' => 'Crop',
@@ -100,11 +100,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '45',
-          'height' => '34',
+          'width' => 45,
+          'height' => 34,
           'anchor' => 'center-top',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
@@ -123,11 +123,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => '110',
+          'width' => 110,
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => '1',
+        'weight' => 1,
       ),
       11 => array(
         'label' => 'Crop',
@@ -139,11 +139,11 @@ function ca_case_study_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => '110',
-          'height' => '83',
+          'width' => 110,
+          'height' => 83,
           'anchor' => 'center-top',
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );

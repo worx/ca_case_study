@@ -13,7 +13,7 @@ function ca_case_study_user_default_roles() {
   // Exported role: case study admin.
   $roles['case study admin'] = array(
     'name' => 'case study admin',
-    'weight' => '6',
+    'weight' => 6,
     'machine_name' => 'case_study_admin',
   );
 

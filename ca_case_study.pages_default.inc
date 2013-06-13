@@ -421,7 +421,7 @@ function ca_case_study_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Case Study';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

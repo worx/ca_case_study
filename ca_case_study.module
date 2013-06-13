@@ -38,7 +38,7 @@ function ca_case_study_menu() {
  * Implements hook_menu_alter().
  */
 function ca_case_study_menu_alter(&$items) {
-  $items['case_study']['title'] = variable_get('ca_case_study_menu_title', 'Case Study');
+  $items['case-study']['title'] = variable_get('ca_case_study_menu_title', 'Case Study');
 }
 
 /**
