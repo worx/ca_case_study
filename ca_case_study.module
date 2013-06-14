@@ -46,7 +46,7 @@ function ca_case_study_menu_alter(&$items) {
  */
 function ca_case_study_panels_pre_render($panel, $renderer) {
   foreach ($panel->content as $key => $value) {
-    if ($value->subtype == 'ca_case_study-ca_case_study_list_1') {
+    if ($value->subtype == 'ca_case_study_list-ca_case_study_list_1') {
       $panel->title = variable_get('ca_case_study_panel_title', 'Case Study');
     }
   }
