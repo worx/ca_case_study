@@ -48,6 +48,8 @@ function ca_case_study_default_page_manager_handlers() {
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-case-study-node ca-case-study-node-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -315,6 +317,8 @@ function ca_case_study_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-case-study-admin',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -410,6 +414,8 @@ function ca_case_study_default_page_manager_pages() {
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-case-study-list ca-case-study-list-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
