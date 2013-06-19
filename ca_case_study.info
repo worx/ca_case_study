@@ -59,7 +59,6 @@ features[variable][] = menu_parent_case_study
 features[variable][] = node_options_case_study
 features[variable][] = node_preview_case_study
 features[variable][] = node_submitted_case_study
-features[variable][] = pathauto_node_case_study_pattern
 features[variable][] = xmlsitemap_settings_node_case_study
 features[views_view][] = ca_case_study_admin
 features[views_view][] = ca_case_study_block

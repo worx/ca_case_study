@@ -75,13 +75,6 @@ function ca_case_study_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_case_study_pattern';
-  $strongarm->value = 'case-study/[node:title]';
-  $export['pathauto_node_case_study_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_node_case_study';
   $strongarm->value = array(
     'status' => '1',
