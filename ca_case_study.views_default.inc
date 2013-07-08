@@ -331,11 +331,12 @@ function ca_case_study_views_default_views() {
     'case_study' => 'case_study',
   );
 
-  /* Display: CA Case Study: Most Recent Case Study Template One */
-  $handler = $view->new_display('block', 'CA Case Study: Most Recent Case Study Template One', 'ca_case_study_block_1');
+  /* Display: CA Case Study: Case Study Block Template One */
+  $handler = $view->new_display('block', 'CA Case Study: Case Study Block Template One', 'ca_case_study_block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Most Recent Case Study';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['block_description'] = 'CA Case Study: Case Study Block Template One';
   $export['ca_case_study_block'] = $view;
 
   $view = new view();
