@@ -1,6 +1,10 @@
-.pane-ca-case-study-node-ca-case-study-node-1-a, .pane-ca-case-study-node-ca-case-study-node-1-b {clear: left; float: left; padding-right: 15px; padding-bottom: 5px;}
+.pane-ca-case-study-node-ca-case-study-node-1-a {float: left;}
 
-.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: left; padding-right: 15px; padding-bottom: 5px;}
+.pane-ca-case-study-node-ca-case-study-node-1-b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
+
+.pane-ca-case-study-node-ca-case-study-node-1-a .views-field-field-ca-case-study-c-screenshot {padding: 0 15px 5px 0;}
+
+.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: left; padding: 0 15px 5px 0;}
 
 .view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot {float: left; padding-right: 10px; padding-bottom: 5px;}
 
