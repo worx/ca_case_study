@@ -22,6 +22,7 @@ function ca_case_study_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['link_display'] = 'feed_1';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -236,6 +237,7 @@ function ca_case_study_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['link_display'] = 'feed_1';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -460,12 +462,13 @@ function ca_case_study_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Case Study: List Template One';
 
   /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'ca_case_study_feed_1');
+  $handler = $view->new_display('feed', 'Feed', 'ca_case_study_feed');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['path'] = 'case-study/feed';
   $handler->display->display_options['displays'] = array(
     'ca_case_study_list_1' => 'ca_case_study_list_1',
