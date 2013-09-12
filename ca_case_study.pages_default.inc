@@ -38,13 +38,6 @@ function ca_case_study_default_page_manager_handlers() {
           'context' => 'argument_entity_id:node_1',
           'not' => FALSE,
         ),
-        1 => array(
-          'name' => 'ca_case_study_node_template',
-          'settings' => array(
-            'ca_case_study_node_template' => 'ca_case_study_node_template_one',
-          ),
-          'not' => FALSE,
-        ),
       ),
       'logic' => 'and',
     ),
@@ -403,15 +396,7 @@ function ca_case_study_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_case_study_list_template',
-          'settings' => array(
-            'ca_case_study_list_template' => 'ca_case_study_list_template_one',
-          ),
-          'not' => FALSE,
-        ),
-      ),
+      'plugins' => array(),
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',

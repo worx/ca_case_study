@@ -45,28 +45,6 @@ function ca_case_study_settings_form() {
     '#required' => TRUE,
     '#description' => t('How many case studies would you like displayed in the block?'),
   );
-  $form['ca_case_study_list_template'] = array(
-    '#type' => 'select',
-    '#title' => t('Case Study\'s list template'),
-    '#options' => array(
-      'ca_case_study_list_template_one' => t('Template one'),
-      'ca_case_study_list_template_two' => t('Template two'),
-      'ca_case_study_list_template_three' => t('Template three'),
-    ),
-    '#required' => TRUE,
-    '#default_value' => variable_get('ca_case_study_list_template', 'ca_case_study_list_template_one'),
-  );
-  $form['ca_case_study_node_template'] = array(
-    '#type' => 'select',
-    '#title' => t('Case Study\'s node template'),
-    '#options' => array(
-      'ca_case_study_node_template_one' => t('Template one'),
-      'ca_case_study_node_template_two' => t('Template two'),
-      'ca_case_study_node_template_three' => t('Template three'),
-    ),
-    '#required' => TRUE,
-    '#default_value' => variable_get('ca_case_study_node_template', 'ca_case_study_node_template_one'),
-  );
   $form['actions'] = array(
     '#type' => 'actions',
   );
