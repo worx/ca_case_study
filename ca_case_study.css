@@ -4,9 +4,11 @@
 
 .pane-ca-case-study-node-ca-case-study-node-1-a .views-field-field-ca-case-study-c-screenshot {padding: 0 15px 5px 0;}
 
-.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: left; padding: 0 15px 5px 0;}
+.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: left;}
+.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot img {padding: 0 15px 5px 0;}
 
-.view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot {float: left; padding-right: 10px; padding-bottom: 5px;}
+.view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot {float: left;}
+.view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot img {padding: 0 15px 5px 0;}
 
 .view-ca-case-study-node .views-field-field-ca-case-study-c-image, .view-ca-case-study-node .views-field-field-ca-case-study-c-image-1 {float: left;}
 
@@ -16,4 +18,6 @@
 
 .pane-ca-case-study-node-ca-case-study-node-1-b .pager .ajax-progress {display: none;}
 
-.view-ca-case-study-list .views-field-nothing {clear: both;}
+.view-ca-case-study-list .views-field-nothing, 
+.view-ca-case-study-block .views-field-field-ca-case-study-c-linklink, 
+.view-ca-case-study-block .views-field-nothing  {clear: both;}

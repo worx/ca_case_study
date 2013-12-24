@@ -1,0 +1,49 @@
+.pane-ca-case-study-node-ca-case-study-node-1-a {float: none; text-align: center;}
+
+.pane-ca-case-study-node-ca-case-study-node-1-b {float: none; clear: left; padding: 0 0 5px; width: auto;}
+
+.pane-ca-case-study-node-ca-case-study-node-1-a .views-field-field-ca-case-study-c-screenshot {padding: 0 0 5px;}
+
+.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: none; text-align: center;}
+.view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot img {padding: 0 0 5px;}
+
+.view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot {float: none; text-align: center;}
+.view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot img {padding: 0 0 5px;}
+
+.view-ca-case-study-node .views-field-field-ca-case-study-c-image, .view-ca-case-study-node .views-field-field-ca-case-study-c-image-1 {float: none; text-align: center;}
+
+.view-ca-case-study-node {width: 200px;}
+
+.pane-ca-case-study-node-ca-case-study-node-1-b img {float: left; padding: 0 2.5px 5px;}
+
+.pane-ca-case-study-node-ca-case-study-node-1-b .pager .ajax-progress {display: none;}
+
+.view-ca-case-study-list .views-field-nothing, 
+.view-ca-case-study-block .views-field-field-ca-case-study-c-linklink, 
+.view-ca-case-study-block .views-field-nothing  {clear: both;}
+
+@media only screen and (min-width:481px) {
+    .pane-ca-case-study-node-ca-case-study-node-1-a {float: left;}
+
+    .pane-ca-case-study-node-ca-case-study-node-1-b {clear: left; float: left; padding: 0 15px 5px 0; width: 200px;}
+
+    .pane-ca-case-study-node-ca-case-study-node-1-a .views-field-field-ca-case-study-c-screenshot {padding: 0 15px 5px 0;}
+   
+    .view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot {float: left;}
+    .view-ca-case-study-list .views-field-field-ca-case-study-c-screenshot img {padding: 0 15px 5px 0;}
+   
+    .view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot {float: left;}
+    .view-ca-case-study-block .views-field-field-ca-case-study-c-screenshot img {padding: 0 15px 5px 0;}
+   
+    .view-ca-case-study-node .views-field-field-ca-case-study-c-image, .view-ca-case-study-node .views-field-field-ca-case-study-c-image-1 {float: left;}
+   
+    .view-ca-case-study-node {width: 200px;}
+   
+    .pane-ca-case-study-node-ca-case-study-node-1-b img {float: left; padding: 0 2.5px 5px;}
+   
+    .pane-ca-case-study-node-ca-case-study-node-1-b .pager .ajax-progress {display: none;}
+   
+    .view-ca-case-study-list .views-field-nothing, 
+    .view-ca-case-study-block .views-field-field-ca-case-study-c-linklink, 
+    .view-ca-case-study-block .views-field-nothing  {clear: both;}
+}
