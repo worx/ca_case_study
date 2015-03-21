@@ -31,16 +31,8 @@ function ca_case_study_image_default_styles() {
 
   // Exported image style: case_study_default.
   $styles['case_study_default'] = array(
-    'name' => 'case_study_default',
     'effects' => array(
       3 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => 200,
@@ -50,13 +42,6 @@ function ca_case_study_image_default_styles() {
         'weight' => -10,
       ),
       9 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
-        'effect callback' => 'image_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_crop_form',
-        'summary theme' => 'image_crop_summary',
-        'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
           'width' => 200,
@@ -71,16 +56,8 @@ function ca_case_study_image_default_styles() {
 
   // Exported image style: case_study_default_thumbnail.
   $styles['case_study_default_thumbnail'] = array(
-    'name' => 'case_study_default_thumbnail',
     'effects' => array(
       5 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => 45,
@@ -90,13 +67,6 @@ function ca_case_study_image_default_styles() {
         'weight' => 1,
       ),
       10 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
-        'effect callback' => 'image_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_crop_form',
-        'summary theme' => 'image_crop_summary',
-        'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
           'width' => 45,
@@ -111,16 +81,8 @@ function ca_case_study_image_default_styles() {
 
   // Exported image style: case_study_thumbnail.
   $styles['case_study_thumbnail'] = array(
-    'name' => 'case_study_thumbnail',
     'effects' => array(
       7 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => 110,
@@ -130,13 +92,6 @@ function ca_case_study_image_default_styles() {
         'weight' => 1,
       ),
       11 => array(
-        'label' => 'Crop',
-        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
-        'effect callback' => 'image_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_crop_form',
-        'summary theme' => 'image_crop_summary',
-        'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
           'width' => 110,
@@ -166,5 +121,6 @@ function ca_case_study_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
