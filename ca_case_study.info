@@ -14,6 +14,7 @@ dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = image
 dependencies[] = link
+dependencies[] = multiupload_imagefield_widget
 dependencies[] = node
 dependencies[] = page_manager
 dependencies[] = panels
