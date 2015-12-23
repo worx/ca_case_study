@@ -409,7 +409,8 @@ function ca_case_study_views_default_views() {
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['settings'] = array(
-    'colorbox_node_style' => 'case_study_default',
+    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'post',
     'colorbox_gallery_custom' => '',
@@ -472,7 +473,8 @@ function ca_case_study_views_default_views() {
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_case_study_c_screenshot']['settings'] = array(
-    'colorbox_node_style' => 'case_study_default_thumbnail',
+    'colorbox_node_style' => 'crop_default_landscape_thumbnail',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'post',
     'colorbox_gallery_custom' => '',
