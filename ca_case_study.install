@@ -60,7 +60,7 @@ function ca_case_study_install() {
 }
 
 /**
- * Set the permissions for BCase Study, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
+ * Set the permissions for Case Study, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
  * given these permissions without overridding the feature.
  */
 function ca_case_study_update_7001() {
