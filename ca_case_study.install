@@ -21,82 +21,10 @@ function ca_case_study_install() {
 
   // Set the Pathauto for the node.
   variable_set('pathauto_node_case_study_pattern', 'case-study/[node:title]');
-
-  // Set the permissions for Case Study Admin
-  user_role_change_permissions(13007701, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
-
-  // Set the permissions for Administrator
-  user_role_change_permissions(3, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
-
-  // Set the permissions for Webmaster
-  user_role_change_permissions(4, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
 }
 
 /**
- * Set the permissions for Case Study, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
- * given these permissions without overridding the feature.
+ * Deprecated update.
  */
 function ca_case_study_update_7001() {
-  // Set the permissions for Case Study Admin
-  user_role_change_permissions(13007701, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
-
-  // Set the permissions for Administrator
-  user_role_change_permissions(3, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
-
-  // Set the permissions for Webmaster
-  user_role_change_permissions(4, 
-    array(
-      'create case_study content' => TRUE,
-      'delete any case_study content' => TRUE,
-      'delete own case_study content' => TRUE,
-      'delete own blog content' => TRUE,
-      'edit any case_study content' => TRUE,
-      'edit own case_study content' => TRUE,
-    )
-  );
 }
