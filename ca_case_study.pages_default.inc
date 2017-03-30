@@ -56,8 +56,8 @@ function ca_case_study_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '297581e1-77e8-4c4b-8e52-cc241bbbd1ff';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'ca_case_study_node_view_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -233,8 +233,8 @@ function ca_case_study_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '%node:title';
   $display->uuid = '297581e1-77e8-4c4b-8e52-cc241bbbd1ff';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view__panel_context_e918de5c-ff17-4768-86eb-4981ac9c6d44';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -510,8 +510,8 @@ function ca_case_study_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'CA Case Study: Admin';
   $display->uuid = 'c3c162cd-5368-4f9c-bf75-e1056189cc43';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_case_study_administration_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -603,8 +603,8 @@ function ca_case_study_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '1424aac4-2250-4c78-b2dd-757690389c82';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_case_study_list_view_panel_context';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -673,8 +673,8 @@ function ca_case_study_default_page_manager_pages() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '1424aac4-2250-4c78-b2dd-757690389c82';
-  $display->storage_type = '';
-  $display->storage_id = '';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_case_study_list_view__panel_context_4b6ff1e2-706a-44ee-a258-b6bdd3d273a3';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
